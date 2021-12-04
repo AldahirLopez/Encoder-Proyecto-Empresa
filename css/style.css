@@ -1,0 +1,149 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.menu{
+    background-color: gray;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+    color: #eff;
+    padding: 0px 15px;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 75px;
+    height: 70px;
+    border-radius: 25%;
+}
+
+.menu .logo h1{
+    font-size: 20px;
+    padding-left: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu_items li:hover, li.active{
+    background-color: rgba(0, 0, 0, .3);
+    transition: .6s;
+}
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show{
+    top: 65px;
+}
+
+@media  screen and (max-width: 1300px) {
+    .menu .logo{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .menu .logo img{
+        width: 70px;
+        height: 60px;
+        border-radius: 25%;
+    }
+    .menu .logo h1{
+        font-size: 15px;
+        padding-left: 15px;
+        color: black;
+        text-transform: uppercase;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu{
+        height: 70px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #414141;
+        top:  -100vh;
+        text-align: center;
+        transition: all .6s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: black;
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+
+@media  screen and (max-width: 858px) and (orientation: landscape) {
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
