@@ -2,9 +2,8 @@
     height: 400px;
     width: 100%;
     background-image: url("/img/body-img.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: 350px 350px;
+
 }
 
 .fondo .texto-intro{
@@ -14,5 +13,5 @@
 
 .fondo .texto-intro h1{
     text-align: center;
-    color: white;
+    color: black
 }
