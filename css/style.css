@@ -9,23 +9,24 @@ header{
     width: 100%;
 }
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .menu{
     z-index: 3;
-    background-color: gray;
+    background-color: white;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
 }
 
 .menu .logo{
     display: flex;
     align-items: center;
-    color: #eff;
+    color: white;
     padding: 0px 10px;
     font-weight: bold;
 }
@@ -64,7 +65,7 @@ body {
 }
 
 .menu_items li:hover, li.active{
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(10, 10, 10, 0.493);
     transition: .6s;
 }
 
@@ -77,7 +78,7 @@ body {
 }
 
 ul.show{
-    top: 65px;
+    top: 79px;
     z-index: 3;
 }
 
@@ -101,35 +102,6 @@ ul.show{
     }
 }
 
-@media screen and (max-width: 1000px) {
-    header{
-        height: 70px;
-    }
-    .menu{
-        height: 70px;
-    }
-    .btn_menu{
-        display: inline-flex;
-    }
-    .menu_items{
-        z-index: 3;
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 65px);
-        background: #414141;
-        top:  -100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
-    .menu_items li{
-        margin: 30px 0 0 0;
-        line-height: 30px;
-    }
-    .logo{
-        font-size: 25px;
-    }
-}
 
 @media screen and (max-width: 1000px) {
     header{
