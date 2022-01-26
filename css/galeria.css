@@ -18,7 +18,7 @@
 
 .contenedor-imagenes{
     z-index: 2;
-    display: flex;
+    display: block;
     width: 100%;
     
 }
