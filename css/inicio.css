@@ -4,20 +4,38 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 550px;   
+    height: 650px;   
+}
+
+.body-fondo::before {
+    content: '';
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/sombreado-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .pantallax{
-    padding-left: 100px;
-    padding-top: 90px;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-600px,-50%);
+    z-index: 2;
 }
 
 .pantallax h1{
-    color: white;
-    font-size: 100px;
-    font-weight: 700;
-    display: block;
-    height: 130px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 .pantallax span{
@@ -85,7 +103,7 @@
     position: absolute;
     height: 550px; 
     width: 350px;
-    left: 1200px;
+    left: 1100px;
     top: 500px;
     border: none;
     text-align: center;
@@ -281,26 +299,32 @@
     }
     
 }
-@media screen and (max-width: 1200px) {
-    .pantallax{
-        padding-left: 20px;
-        padding-top: 90px;
-    }
-    
+@media screen and (max-width: 1200px) {    
     .pantallax h1{
-        color: white;
-        font-size: 70px;
-        font-weight: 700;
-        display: block;
-        height: 80px;
+        font-size: 40px;
+        line-height: 60px;
+        color: #fff;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 800;
+        letter-spacing: -2px;
     }
     .pantallax span{
         font-size: 30px;
         display: block;
         color: white;
     }
+
     .body-fondo{
-        height: 400px;   
+        height: 500px;   
+    }
+    .body-fondo::before{
+        height: 500px;
+    }
+    .body-fondo .pantallax{
+        text-align: center;
+        position: inherit!important;
+        width: 320px!important;
+        transform: translate(50px,50%);
     }
     
     .div-sobre{

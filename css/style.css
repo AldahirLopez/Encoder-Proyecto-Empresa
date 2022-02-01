@@ -4,23 +4,19 @@
     outline: 0;
     box-sizing: border-box;
 }
-header{
-    height: 80px;
-    width: 100%;
-}
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Urbanist', sans-serif;
 }
+
 .menu{
     z-index: 3;
-    background-color: black;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0.7;
 }
 
@@ -42,6 +38,10 @@ body {
     font-size: 20px;
     color: white;
     text-transform: uppercase;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 0px;
+    font-weight: normal;
+    letter-spacing: 0;
 }
 
 .menu_items {
@@ -104,7 +104,7 @@ ul.show{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1145px) {
     header{
         height: 60px;
     }
