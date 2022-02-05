@@ -226,6 +226,12 @@ section {
     opacity: 0.1;
 }
 
+.banner-fondo2 .contenedor .conteLeft{
+    width: 90%;
+    margin-left: -90px;
+    padding-bottom: 25px;
+}
+
 .pc{
     display: block;
 }
@@ -265,4 +271,105 @@ h3
     color: #1c3259;
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
+}
+
+.banner-fondo4{
+    padding: 60px 0px 80px;
+    background: #e7ecf1;
+    z-index: 3;
+}
+
+.banner-fondo4 .contenedor {
+    padding: 0 40px;
+}
+
+.banner-fondo4 .contenedor::before {
+    content: 'Seguridad';
+    font-size: 100px;
+    line-height: 100px;
+    color: #373737;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 290px;
+    left: -343px;
+    opacity: 0.1;
+    transform: rotate(-90deg);
+}
+
+.banner-fondo4 .conte {
+    display: table-cell;
+    height: 450px;
+    vertical-align: middle;
+}
+
+.banner-fondo4 .conteImg {
+    width: 100%;
+    position: relative;
+    margin: 90px 0px;
+}
+
+.banner-fondo4 .diagrama{
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+.banner-fondo5{
+    padding: 0px 0px 80px;
+    background: #e7ecf1;
+    z-index: 2;
+}
+
+
+.banner-fondo5 h2 {
+    margin-top: 80px;
+}
+
+.banner-fondo5 .flex {
+    display: flex;
+    align-items: center;
+}
+
+.banner-fondo5 .flex img{
+    width: 15%;
+}
+
+
+.banner-fondo5 .flex h5 {
+    color: #3a54a5;
+}
+
+.banner-fondo5 p.textLeft {
+    margin-top: 40px;
+    padding-left: 100px;
+}
+
+.banner-fondo5 .contenedor::before {
+    content: '';
+    width: 1400px;
+    height: 720px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -95px;
+    z-index: -1;
+    left: -110px;
+    -webkit-box-shadow: 10px 15px 10px 0px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 10px 15px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 15px 10px 0px rgb(0 0 0 / 50%);
+}
+
+.banner-fondo5 .contenedor::after {
+    content: '';
+    width: 159px;
+    height: 175px;
+    background-image: url(../img/responsabilidad/semicirculo-s5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -60px;
+    bottom: -200px;
 }

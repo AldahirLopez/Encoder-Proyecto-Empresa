@@ -6,10 +6,11 @@
 }
 body {
     font-family: 'Urbanist', sans-serif;
+    
 }
 
 .menu{
-    z-index: 3;
+    z-index: 4;
     height: 80px;
     width: 100%;
     display: flex;
