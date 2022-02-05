@@ -29,7 +29,7 @@
     z-index: 2;
 }
 
-.banner-text h1{
+h1{
     font-size: 60px;
     line-height: 60px;
     color: #fff;
@@ -321,17 +321,6 @@ img {
     box-shadow: 10px 15px 10px 0px rgb(0 0 0 / 50%);
 }
 
-.banner-fondo5 ul::before, .banner-fondo5 ul::after {
-    content: '';
-    width: 6px;
-    height: 210px;
-    background: #3a54a5;
-    position: absolute;
-    top: 25%;
-    left: 33.33%;
-    margin-left: -3px;
-}
-
 .conteForm form input:not([type="submit"]), .conteForm form textarea {
     margin: 0px auto;
     display: block;
@@ -485,4 +474,90 @@ input:not([type="submit"]), .conteForm form textarea {
     color: #000;
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+    .textleft {
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h4, h5 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .banner-fondo{
+        height: 500px;
+    }
+    .banner-fondo .banner-text {
+        position: inherit!important;
+        width: 320px!important;
+        transform: translate(-160px,-50%);
+    }
+    .textLeft, .textRight {
+        text-align: center;
+    }
+    .banner-fondo1 .conteQuienes{
+        padding: 30px;
+    }
+    .banner-fondo1 .conteRight{
+        width: 100%;
+    }
+    .banner-fondo1 li:nth-child(1), .banner-fondo2 li:nth-child(1), .banner-fondo4 li:nth-child(2) {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .banner-fondo1 li:nth-child(2), .banner-fondo2 li:nth-child(2), .banner-fondo4 li:nth-child(1) {
+        width: 100%;
+    }
+    .banner-fondo1 h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .banner-fondo1 .conteImg {
+        height: 400px;
+    }
+    .banner-fondo2 {
+        padding: 30px 0px 40px;
+    }
+    .contenedor {
+        width: 95%;
+    }
+    .banner-fondo2 .icono, .banner-fondo2 .Souiche {
+        width: 100px;
+    }
+    .banner-fondo2 .contenedor::before {
+        font-size: 50px;
+        bottom: -70px;
+        left: 0px;
+    }
+   .banner-fondo3 {
+        padding: 120px 0px 40px;
+    }
+    .banner-fondo4 {
+        padding: 40px 0px;
+    }
+    .banner-fondo4 .icono {
+        width: 120px;
+        margin: auto;
+    }
+    .banner-fondo4 h2 {
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .banner-fondo5.conteForm {
+        top: -25px;
+        padding: 25px 0px;
+    }
+    .col2 li, .col3 li, .col4 li {
+        width: 100%;
+    }
 }

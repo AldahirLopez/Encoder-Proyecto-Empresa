@@ -373,3 +373,106 @@ h3
     right: -60px;
     bottom: -200px;
 }
+@media screen and (max-width: 1200px) {
+    .contenedor{
+        width: 95%;
+    }
+    .textLeft, .textRight {
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h4, h5 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .banner-fondo{
+        height: 500px;
+    }
+    .banner-fondo .conteBanner {
+        position: inherit!important;
+        width: 320px!important;
+        transform: translate(-160px,-50%);
+    }
+    .banner-fondo1 .conteRight:nth-child(1) {
+        width: 100%;
+        padding: 30px;
+    }
+    .banner-fondo1 .conteImg {
+        height: 400px;
+    }
+    .banner-fondo1 .col2 li:nth-child(1) {
+        width: 100%;
+    }
+    .banner-fondo1 .imagen {
+        display: none;
+    }
+    .banner-fondo1 .conteImg {
+        height: 400px;
+    }
+    .banner-fondo1 .conteImg::before {
+        width: 120px;
+        height: 116px;
+        left: -65px;
+    }
+    .banner-fondo2 {
+        padding: 20px 0px 40px;
+    }
+    .banner-fondo2 .contenedor .conteLeft {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .banner-fondo1 h2, .banner-fondo2 h2 {
+        margin: 10px 0px 25px;
+    }
+    .banner-fondo2::before {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner-fondo3 {
+        padding: 120px 0px 40px;
+    }
+    .banner-fondo4, .banner-fondo5{
+        padding: 15px 0px 20px;
+    }
+    .banner-fondo4 :nth-child(1) {
+        width: 100%;
+    }
+    .banner-fondo4 .diagrama {
+        padding-left: 0px;
+        padding-top: 30px; 
+   }
+    .col2 li, .col3 li, .col4 li {
+        width: 100%;
+    }
+    .banner-fondo5 .flex {
+        display: block;
+        text-align: center;
+    }
+    .banner-fondo5 p.textLeft {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .banner-fondo5 .flex img {
+        margin: auto;
+    }
+    .banner-fondo5 .contenedor {
+        background-color: #fff;
+    }
+    .banner-fondo5 .contenedor::before {
+       display: none;
+    }
+    
+    .banner-fondo5 .contenedor::after {
+        display: none;
+    }
+}
