@@ -299,7 +299,7 @@
     }
     
 }
-@media screen and (max-width: 1200px) {    
+  @media screen and (max-width: 1200px) {  
     .pantallax h1{
         font-size: 40px;
         line-height: 60px;
@@ -403,4 +403,21 @@
     }
     
 
+}
+@media screen and (max-width: 385px) {  
+    .pantallax h1{
+        font-size: 35px;
+    }
+    .body-fondo .pantallax {
+        text-align: center;
+        transform: translate(-10px,50%);
+    }
+    .contenedor-derecha {
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+    }
+    .contenedor-derecha2 {
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+    }
 }
